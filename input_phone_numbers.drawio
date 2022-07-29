@@ -1,0 +1,31 @@
+<mxfile host="65bd71144e">
+    <diagram id="PmQAZ7F5q4tNPS75fodr" name="Page-1">
+        <mxGraphModel dx="995" dy="675" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="Start" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="170" y="40" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="input info" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="170" y="160" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="create array" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="170" y="260" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="end" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="170" y="360" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="if ФИО is together" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="340" y="150" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="split&amp;nbsp;&lt;br&gt;1 item - Имя&lt;br&gt;2 item - Фамилия&lt;br&gt;3 item - Отчестов&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="470" y="160" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="if &amp;gt; 3 - прочее" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="475" y="240" width="110" height="80" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
