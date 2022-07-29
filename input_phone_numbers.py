@@ -12,6 +12,7 @@
 # |комментарий| str | |
 
 import dictionarys as Dic
+import json
 
 
 def phone_number_row_creation \
@@ -30,31 +31,35 @@ def phone_number_row_creation \
         fav_check = False
     ):
     """Метод - принимает на вход параметры телефонного справочника, если они не заданы - использует значения по умолчанию
+    Перед началом загружает справочник , для того что бы подобрать последний ключ и новый добавлять по новому ключу 
 
-    Returns:
-        str: на выходе строка , полей с разделителем '|'
+    В конце - перезаписывает файл json 
     """
-
-    ID_number = 1
+    with open('phone_numbers.json', 'r') as infile:
+        data = json.load(infile)
+    infile.close()
+    phone_dic = data
+    max_id = int(max(phone_dic.keys()))
     colum_dic = \
         {
-            0 : ID_number ,
-            1 : First_name ,
-            2 : Last_name , 
-            3 : Other_name ,
-            4 : Dic.type_of_contact_dic[type_of_contact] , 
-            5 : Company_name ,
-            6 : Dic.tel_type_dic[type_of_number] ,
-            7 : email ,
-            8 : tel_number ,
-            9 : Dic.sex_dic[sex] ,
-            10 : bithd_day ,
-            11 : Commentary ,
-            12 : fav_check
+            "First name" : First_name ,
+            "Second name" : Last_name , 
+            "Othen name" : Other_name ,
+            "Type of Contact" : Dic.type_of_contact_dic[type_of_contact] , 
+            "Company" : Company_name ,
+            "Telefon type" : Dic.tel_type_dic[type_of_number] ,
+            "Telefon number" : tel_number ,
+            "E-mail" : email ,
+            "Sex" : Dic.sex_dic[sex] ,
+            "Birth Day" : bithd_day ,
+            "Comment" : Commentary ,
+            "Fav check" : fav_check
         }
-    return '|'.join(map(str , colum_dic.values()))
+    # phone_dic = {}   
+    phone_dic[max_id+1] = colum_dic
+    with open('phone_numbers.json', 'w') as outfile:
+        json.dump(phone_dic, outfile)
+    outfile.close()
 
-
-print(phone_number_row_creation())
-
+phone_number_row_creation(Other_name = "Geek Study" , Company_name = "GB.ru")
 
