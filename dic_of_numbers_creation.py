@@ -1,8 +1,6 @@
 # задача - получит от пользователя данные, и создать кортеж 
 
 import dictionarys as Dic
-import json
-
 
 def phone_number_row_creation \
     (
@@ -19,16 +17,14 @@ def phone_number_row_creation \
         tel_number = " ",
         telefon_comment = "" ,
         email = " ",
+        data = {}
         
     ):
     """Метод - принимает на вход параметры телефонного справочника, если они не заданы - использует значения по умолчанию
     Перед началом загружает справочник , для того что бы подобрать последний ключ и новый добавлять по новому ключу 
 
-    В конце - перезаписывает файл json 
+    возвращает словарь - строчку с данными
     """
-    with open('phone_numbers.json', 'r') as infile:
-        data = json.load(infile)
-    infile.close()
     phone_dic = data
     tel_number_dic = \
         {
@@ -51,8 +47,6 @@ def phone_number_row_creation \
             "Tel_info" : tel_number_dic
         }
     phone_dic[int(max(phone_dic.keys()))+1] = person_info
-    with open('phone_numbers.json', 'w') as outfile:
-        json.dump(phone_dic, outfile)
-    outfile.close()
+    return phone_dic
 
 
