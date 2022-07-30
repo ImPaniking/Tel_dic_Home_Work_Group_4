@@ -1,16 +1,5 @@
 # задача - получит от пользователя данные, и создать кортеж 
 
-# |Фамилия | str| |
-# |Имя | str | |
-# |Отчетсво | str | |
-# |Прочее ( ник или лишние слова )| str ||
-# |Компания | str | |
-# |тип| str ||
-# |телефон| str|
-# |пол | str | |
-# |Год рождения| date | |
-# |комментарий| str | |
-
 import dictionarys as Dic
 import json
 
@@ -66,21 +55,4 @@ def phone_number_row_creation \
         json.dump(phone_dic, outfile)
     outfile.close()
 
-phone_number_row_creation \
-    (
-        First_name = "Артём", 
-        Last_name = "Пенский", 
-        Other_name = "ImPanikin",
-        type_of_contact = 3, 
-        sex = 1 ,
-        bithd_day = "07/03/1991",
-        Commentary = "Личные данные" ,
-        Company_name = "ICS Vistarcom SRL",
-        fav_check = True ,
-        type_of_number = 3 ,
-        tel_number = " +373 68 032305 ",
-        telefon_comment = "" ,
-        email = "artiom.penschii91@gmail.com",
-        
-    )
 
