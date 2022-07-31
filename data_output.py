@@ -53,11 +53,10 @@ for i in range(len(titles_list)):
 
     for y in range(2):
         if y == 0:
-            Message(width=300, text=person_info[i+1]) \
+            Message(width=300, text=titles_list[i]) \
                 .grid(row=i, column=y, sticky=W)
         else:
             Message(width=300, text=data_personal_list[i]) \
-
                 .grid(row=i, column=y)
 
 window.mainloop()

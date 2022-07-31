@@ -48,3 +48,12 @@ person_info = \
         9 : "Fav check" ,
         10 : "Tel_info" 
     }
+
+tel_row = \
+    {
+        1 : "First name" ,
+        2 : "Second name" ,
+        3 : "Sex",
+        4 : "Type of contact",
+        5 : "Tel number" 
+    }
