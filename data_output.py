@@ -50,7 +50,6 @@ titles_list = ['Фамилия:', 'Имя:', 'Отчество:', 'Прочее 
                'Год рождения:', 'Комментарий:']
 
 for i in range(len(titles_list)):
-
     for y in range(2):
         if y == 0:
             Message(width=300, text=titles_list[i]) \
@@ -58,5 +57,5 @@ for i in range(len(titles_list)):
         else:
             Message(width=300, text=data_personal_list[i]) \
                 .grid(row=i, column=y)
-
+                
 window.mainloop()
