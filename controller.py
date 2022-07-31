@@ -14,7 +14,7 @@ match option_value:
         option_value = UI.input_options_look_up ()
         match option_value:
             case 1:
-                name = "Artion"
+                name = "Artiom"
                 card = LOOK.look_up_by_name(name,WWB.take_from_base())
                 print(card)
                 Fancy.card_output(DIC.tel_row,card)
@@ -28,6 +28,13 @@ match option_value:
                 card = LOOK.look_up_by_tel_number(tel,WWB.take_from_base())
                 Fancy.card_output(DIC.tel_row,card)
     case 2:
+        First_name = "Oleg", 
+        Last_name = "S", 
+        Other_name = " ",
+        sex = 1 ,
+        type_of_contact = 4, 
+        tel_number = "+ 373 78 482305",
+
         WWB.row_creation_fun()
     case 3:
         print("ERROR 404 , WORCK IN PRGRESS")
