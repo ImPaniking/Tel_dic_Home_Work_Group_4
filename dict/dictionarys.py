@@ -23,7 +23,7 @@ type_of_contact_dic = \
         1 : "person" ,
         2 : "friend",
         3 : "family",
-        4 : "friend" ,
+        4 : "tovarish" ,
         5 : "coworker" ,
         6 : "place"
     }
