@@ -105,3 +105,4 @@ def colums_output(dict_of_rows : dict , data : dict):
                 Message(width=300, text=new_list[y-1][j]) \
                     .grid(row=i+1, column=y)          
     window.mainloop()
+

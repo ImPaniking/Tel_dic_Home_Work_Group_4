@@ -14,27 +14,27 @@ phone_dic = TAKE()
 #     print(phone_dic[i]["First name"])
 # print(look_up_by_name("Artiom",TAKE()))
 
-rewrite_base\
-    (row_creation_fun\
-    (
-        First_name = "Liza", 
-        Last_name = "S", 
-        Other_name = " ",
-        sex = 2 ,
-        type_of_contact = 1, 
-        tel_number = "+ 373 78 482305",
-        data = TAKE()
-        
-    ))
-
 # rewrite_base\
-#     (change_item_in_dict\
-#         ('1',
-#         "First name", 
-#         "Artiom", 
-#         TAKE()
-#         )
-#     )
+#     (row_creation_fun\
+#     (
+#         First_name = "Liza", 
+#         Last_name = "S", 
+#         Other_name = " ",
+#         sex = 2 ,
+#         type_of_contact = 1, 
+#         tel_number = "+ 373 78 482305",
+#         data = TAKE()
+        
+#     ))
+
+rewrite_base\
+    (change_item_in_dict\
+        ('5',
+        "First name", 
+        "Artiom", 
+        TAKE()
+        )
+    )
 
 # colums_output(tel_row,TAKE())
 
