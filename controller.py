@@ -4,6 +4,28 @@ import Look_up_delete_add as LOOK
 import data_output as Fancy
 import dict as DIC
 
+def one_card_or_multi(card):
+    if len(card) > 1:
+        Fancy.colums_output(DIC.tel_row,card)
+    else :
+        Fancy.card_output(DIC.tel_row,card)
+
+def look_on_contact():
+    option_value = UI.input_options_look_up ()
+    match option_value:
+            case 1:
+                name = "Kira" # тут должен быть ввод Имени
+                card = LOOK.look_up_by_name(name,WWB.take_from_base())
+                one_card_or_multi(card)
+            case 2:
+                name = "Igor" # тут должен быть ввод Имени
+                sir_name = "Penschii" # тут должен быть ввод Фамили
+                card = LOOK.look_up_by_name_sirname(name,sir_name,WWB.take_from_base())
+                one_card_or_multi(card)
+            case 3:
+                tel = "+373 68 032305" # тут должен быть ввод телефона
+                card = LOOK.look_up_by_tel_number(tel,WWB.take_from_base())
+                one_card_or_multi(card)
 
 UI.description()
 
@@ -11,30 +33,54 @@ user_name = UI.say_hello()
 option_value = UI.input_options()
 match option_value:
     case 1:
-        option_value = UI.input_options_look_up ()
+        look_on_contact()
+    case 2:
+        repeat_val = True
+        # while repeat_val:
+            
+            # Блок ввода информации для карточки
+        First_name = "Kira"
+        Last_name = "S"
+        Other_name = " "
+        sex_type = 2
+        contact_type = 3
+        tel_number = "+ 373 78 482305"
+
+        new_card = WWB.row_creation_fun\
+                (
+                        First_name = First_name, 
+                        Last_name = Last_name, 
+                        Other_name = Other_name,
+                        sex = sex_type ,
+                        type_of_contact = contact_type, 
+                        tel_number = tel_number,
+                        data = WWB.take_from_base()
+                )
+        Fancy.card_output(DIC.tel_row,new_card)
+        WWB.rewrite_base(new_card)
+            # repeat_val = UI.repeat_options() 
+    case 3:
+        print("ERROR 404 , WORCK IN PRGRESS\nNot full content:")
+        option_value = UI.options_what_to_do()
         match option_value:
             case 1:
-                name = "Artiom"
-                card = LOOK.look_up_by_name(name,WWB.take_from_base())
-                print(card)
-                Fancy.card_output(DIC.tel_row,card)
-            case 2:
-                name = "Igor"
-                sir_name = "Penschii"
-                card = LOOK.look_up_by_name_sirname(name,sir_name,WWB.take_from_base())
-                Fancy.card_output(DIC.tel_row,card)
-            case 3:
-                tel = "+373 68 032305"
-                card = LOOK.look_up_by_tel_number(tel,WWB.take_from_base())
-                Fancy.card_output(DIC.tel_row,card)
-    case 2:
-        First_name = "Oleg", 
-        Last_name = "S", 
-        Other_name = " ",
-        sex = 1 ,
-        type_of_contact = 4, 
-        tel_number = "+ 373 78 482305",
+                look_on_contact()
+                option_value = UI.options_find_contact
+                match option_value:
+                    case 1:
+                        print("Вы его видели, когда искали =) этот пункт немного не подходит сюда, но не могу ")
+                    case 2:
+                        # repeat_val = True
+                        # while repeat_val:
+                        ID_user = "5" # нужен ввод ИД человека ( то что самое первое в базе)
+                        What_to_cange = 1 # выбор из списка названий столбцов - словарик tel_row
+                        data = LOOK.change_item_in_dict(ID_user,DIC.tel_row[What_to_cange])
+                        Fancy.card_output(DIC.tel_row,data)
+                        # repeat_val = UI.repeat_options()
+                    case 3:
+                        # repeat_val = True
+                        # while repeat_val:
+                        ID_user = input("Ввудите ID контакта для удаления") # нужен ввод ИД человека ( то что самое первое в базе)
+                        LOOK.pop_row_number(ID_user)
+                        # repeat_val = UI.repeat_options()
 
-        WWB.row_creation_fun()
-    case 3:
-        print("ERROR 404 , WORCK IN PRGRESS")

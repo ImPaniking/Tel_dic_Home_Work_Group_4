@@ -66,7 +66,7 @@ def card_output(dict_of_rows : dict , data : dict):
     for item in data.values():
         if type(item) == dict:
             data_new = dict(item.items())
-    print(data_new)
+    # print(data_new)
 
     for i,j in dict_of_rows.items():
         for y in range(2):
@@ -75,8 +75,7 @@ def card_output(dict_of_rows : dict , data : dict):
                     .grid(row=i, column=y, sticky=W)
             else:
                 Message(width=300, text=data_new[j]) \
-                    .grid(row=i, column=y)
-                    
+                    .grid(row=i, column=y)                
     window.mainloop()
     
 def colums_output(dict_of_rows : dict , data : dict):
@@ -89,8 +88,8 @@ def colums_output(dict_of_rows : dict , data : dict):
             data_new = dict(item.items())
         new_list.append(data_new)
         new_list_index.append(i)
-    print(new_list)
-    print(new_list_index)
+    # print(new_list)
+    # print(new_list_index)
 
     Message(width=300, text="ID") \
         .grid(row=0, column=0, sticky=W)
@@ -104,7 +103,5 @@ def colums_output(dict_of_rows : dict , data : dict):
                     .grid(row=i+1, column=y, sticky=W)
             else:
                 Message(width=300, text=new_list[y-1][j]) \
-                    .grid(row=i+1, column=y)
-    
-                    
+                    .grid(row=i+1, column=y)          
     window.mainloop()
