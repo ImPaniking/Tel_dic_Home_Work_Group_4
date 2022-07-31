@@ -1,6 +1,6 @@
 # задача - получит от пользователя данные, и создать кортеж 
 
-import dictionarys as Dic
+import dict as Dic
 
 def phone_number_row_creation \
     (

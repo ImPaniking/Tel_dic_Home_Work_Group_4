@@ -9,6 +9,6 @@ def take_from_base(path = 'phone_numbers.json'):
 
 def rewrite_base(dictionary,path = 'phone_numbers.json'):
     with open(path, 'w') as outfile:
-        json.dump(dictionary, outfile)
+        json.dump(dictionary, outfile,indent=2)
         outfile.close()
 
