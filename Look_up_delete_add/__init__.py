@@ -4,3 +4,4 @@ from.look_up_card import look_up_by_name_sirname
 from.look_up_card import look_up_by_tel_number
 from.look_up_card import look_up_by_sex
 from.look_up_card import look_up_by_type_of_contact
+from .change_item import change_item_in_dict

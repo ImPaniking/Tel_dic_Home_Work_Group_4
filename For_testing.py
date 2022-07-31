@@ -3,6 +3,7 @@ from Look_up_delete_add import look_up_by_name
 from worck_with_base import row_creation_fun
 from worck_with_base import rewrite_base
 from Look_up_delete_add import look_up_by_name
+from Look_up_delete_add import change_item_in_dict
 
 phone_dic = TAKE()
 
@@ -22,4 +23,14 @@ phone_dic = TAKE()
 #         data = TAKE()
         
 #     ))
+
+# rewrite_base\
+#     (change_item_in_dict\
+#         ('0',
+#         "First name", 
+#         "Igor", 
+#         TAKE()
+#         )
+#     )
+
 
