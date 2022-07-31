@@ -1,24 +1,50 @@
-{"0": {"First name": " ", 
-    "Second name": " ", 
-    "Othen name": " ", 
-    "Type of Contact": "n/d", 
-    "Company": " ", 
-    "Telefon type": "n/d", 
-    "Telefon number": " ", 
-    "E-mail": " ", 
-    "Sex": "n/d", 
-    "Birth Day": " ", 
-    "Comment": " ", 
-    "Fav check": false}, 
-    "2": {"First name": " ", 
-    "Second name": " ", 
-    "Othen name": "Geek Study",
-     "Type of Contact": "n/d", 
-     "Company": "GB.ru", 
-     "Telefon type": "n/d", 
-     "Telefon number": " ", 
-     "E-mail": " ", 
-     "Sex": "n/d", 
-     "Birth Day": " ", 
-     "Comment": " ", 
-     "Fav check": false}}
+{
+  "0": {
+    "First name": "Igor",
+    "Second name": "Penschii",
+    "Othen name": " ",
+    "Sex": "male",
+    "Type of Contact": "friend",
+    "Tel number": "+ 373 68 032305"
+  },
+  "1": {
+    "First name": "Artiom",
+    "Second name": "S",
+    "Othen name": " ",
+    "Sex": "male",
+    "Type of Contact": "family",
+    "Tel number": "+ 373 68 482305"
+  },
+  "2": {
+    "First name": "Oleg",
+    "Second name": "S",
+    "Othen name": " ",
+    "Sex": "male",
+    "Type of Contact": "tovarish",
+    "Tel number": "+ 373 78 482305"
+  },
+  "3": {
+    "First name": "Liza",
+    "Second name": "S",
+    "Othen name": " ",
+    "Sex": "female",
+    "Type of Contact": "person",
+    "Tel number": "+ 373 78 482305"
+  },
+  "4": {
+    "First name": "Kira",
+    "Second name": "S",
+    "Othen name": " ",
+    "Sex": "female",
+    "Type of Contact": "family",
+    "Tel number": "+ 373 78 482305"
+  },
+  "6": {
+    "First name": "Liza",
+    "Second name": "S",
+    "Othen name": " ",
+    "Sex": "female",
+    "Type of Contact": "family",
+    "Tel number": "+ 373 78 482305"
+  }
+}
