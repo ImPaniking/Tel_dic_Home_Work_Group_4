@@ -5,6 +5,18 @@
 import dictionarys
 import json
 
+def look_up_by_name(name , data : dict):
+    return dict(filter(lambda x : x[1]["First name"] == name , data.items()))
+        for x[1] == name 
+        return name
+
+def look_up_by_name_sirname(name , sir_name, data : dict):
+        return dict(filter(lambda x : x[1]["First name"] == name and x[1]["Second name"] == sir_name  , data.items()))
+        if First_name == name
+
+
+
+
 
 #-----------------------------------------------------------------------------------
 #поиск по json
