@@ -54,6 +54,6 @@ tel_row = \
         1 : "First name" ,
         2 : "Second name" ,
         3 : "Sex",
-        4 : "Type of contact",
+        4 : "Type of Contact",
         5 : "Tel number" 
     }
