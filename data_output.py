@@ -1,4 +1,5 @@
 from tkinter import *
+
 from worck_with_base import take_from_base as TAKE
 
 phone_dic = TAKE()
@@ -40,6 +41,7 @@ for item in target_data:
 data_personal_list.insert(4, data_telefon_list[0])
 data_personal_list.insert(5, data_telefon_list[1])
 
+
 window = Tk()
 window.title('Информационная карточка')
 
@@ -48,12 +50,14 @@ titles_list = ['Фамилия:', 'Имя:', 'Отчество:', 'Прочее 
                'Год рождения:', 'Комментарий:']
 
 for i in range(len(titles_list)):
+
     for y in range(2):
         if y == 0:
-            Message(width=300, text=titles_list[i]) \
+            Message(width=300, text=person_info[i+1]) \
                 .grid(row=i, column=y, sticky=W)
         else:
             Message(width=300, text=data_personal_list[i]) \
+
                 .grid(row=i, column=y)
 
 window.mainloop()
