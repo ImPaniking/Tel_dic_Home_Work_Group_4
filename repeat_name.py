@@ -8,8 +8,13 @@ import json
 
 #-----------------------------------------------------------------------------------
 #поиск по json
-
-
+# new_dict = dict(filter(lambda x : x[1]["First name"] == name , data.items())) # коротко ф-я ниже
+# def look_up_by_name(name , data : dict):
+#     new_dict = {}
+#     for x,y in data.items():
+#         if y["First name"] == name:
+#             new_dict[x] = y
+#     print(new_dict)
 
 # перевод списка из json в python
 
@@ -19,7 +24,7 @@ import json
 # data = json.load(f)<font></font>
 # f.close()<font></font>
 
-# получение коднейм
+# получение коднейм правда не понимаю для чего?
 # for _name in data["names"]: <font></font>
 #     print(_name["codename"])<font></font>
 
@@ -88,12 +93,12 @@ import json
 #     for i in  data:
 #         print(i)
         
-# def search(data):
-#     # Поиск по справочнику.
-#     flag = 1
-#     name = input('имя > ')
-#     for line in data:
-#         if name in line:
-#             flag = 0
-#             print(line)
-#     if flag: print('no name given')
+def search(data):
+    # Поиск по справочнику.
+    flag = 1
+    name = input('имя > ')
+    for line in data:
+        if name in line:
+            flag = 0
+            print(line)
+    if flag: print('Имя не найдено')
