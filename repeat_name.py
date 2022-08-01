@@ -5,28 +5,6 @@
 import dictionarys
 import json
 
-def look_up_by_name(name , data : dict):
-    return dict(filter(lambda x : x[1]["First name"] == name , data.items()))
-        for x[1] == name 
-        return name
-
-def look_up_by_name_sirname(name , sir_name, data : dict):
-        return dict(filter(lambda x : x[1]["First name"] == name and x[1]["Second name"] == sir_name  , data.items()))
-        if First_name == name
-
-
-
-
-
-#-----------------------------------------------------------------------------------
-#поиск по json
-# new_dict = dict(filter(lambda x : x[1]["First name"] == name , data.items())) # коротко ф-я ниже
-# def look_up_by_name(name , data : dict):
-#     new_dict = {}
-#     for x,y in data.items():
-#         if y["First name"] == name:
-#             new_dict[x] = y
-#     print(new_dict)
 
 # перевод списка из json в python
 
@@ -36,7 +14,9 @@ def look_up_by_name_sirname(name , sir_name, data : dict):
 # data = json.load(f)<font></font>
 # f.close()<font></font>
 
+
 # получение коднейм правда не понимаю для чего?
+
 # for _name in data["names"]: <font></font>
 #     print(_name["codename"])<font></font>
 
@@ -105,6 +85,7 @@ def look_up_by_name_sirname(name , sir_name, data : dict):
 #     for i in  data:
 #         print(i)
         
+
 def search(data):
     # Поиск по справочнику.
     flag = 1
@@ -114,3 +95,4 @@ def search(data):
             flag = 0
             print(line)
     if flag: print('Имя не найдено')
+
