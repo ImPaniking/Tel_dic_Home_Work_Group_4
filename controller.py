@@ -86,4 +86,3 @@ def button():
                                     LOOK.pop_row_number(ID_user)
                                     repeat_val = UI.repeat_options()
         repeat = UI.finish_options (user_name = user_name)
-button()
