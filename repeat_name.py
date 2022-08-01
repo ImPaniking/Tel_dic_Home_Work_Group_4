@@ -6,11 +6,6 @@ import dictionarys
 import json
 
 
-#-----------------------------------------------------------------------------------
-#поиск по json
-
-
-
 # перевод списка из json в python
 
 # import dictionarys<font></font>
@@ -19,7 +14,9 @@ import json
 # data = json.load(f)<font></font>
 # f.close()<font></font>
 
-# получение коднейм
+
+# получение коднейм правда не понимаю для чего?
+
 # for _name in data["names"]: <font></font>
 #     print(_name["codename"])<font></font>
 
@@ -88,12 +85,14 @@ import json
 #     for i in  data:
 #         print(i)
         
-# def search(data):
-#     # Поиск по справочнику.
-#     flag = 1
-#     name = input('имя > ')
-#     for line in data:
-#         if name in line:
-#             flag = 0
-#             print(line)
-#     if flag: print('no name given')
+
+def search(data):
+    # Поиск по справочнику.
+    flag = 1
+    name = input('имя > ')
+    for line in data:
+        if name in line:
+            flag = 0
+            print(line)
+    if flag: print('Имя не найдено')
+
