@@ -27,19 +27,33 @@ phone_dic = TAKE()
         
 #     ))
 
-rewrite_base\
-    (change_item_in_dict\
-        ('5',
-        "First name", 
-        "Artiom", 
-        TAKE()
-        )
-    )
+# rewrite_base\
+#     (change_item_in_dict\
+#         ('5',
+#         "First name", 
+#         "Artiom", 
+#         TAKE()
+#         )
+#     )
 
 # colums_output(tel_row,TAKE())
 
+# def sadasdadas():
+#     print("Выберите из списка : ")
+#     for i,itme in tel_row.items():
+#         print(f"{i} - > {itme}")
+#     name = input("Ввод : ")
+#     data=look_up_by_name(name,TAKE())
+#     if len(data) < 1:
+#         print("нет такого пользователя")
 
-# for i,itme in tel_row.items():
-#     print(f"{i} - > {itme}")
+#     else:
+#         print("Есть пользователи с таким имененм :")
+
+
+    
+
+
+# sadasdadas()
 
 # print(tel_row)

@@ -8,7 +8,7 @@ def FirstName():
     # for i,itme in tel_row.items():
     #         print(f"{i} - > {itme}")
             First_name = input("\nВедите имя контакта: ")
-            data = look_up_by_name(name , TAKE())
+            data = look_up_by_name(First_name , TAKE())
             if len(data) < 1:
                 print("нет такого пользователя")
 
